@@ -31,8 +31,10 @@ Rails.application.routes.draw do
   #     resources :comments, :sales
   #     resource :seller
   #   end
+  get 'items/new' => 'items#new'
   get 'items/:id' => 'items#show'
   get 'items/' => 'items#index'
+  post 'items' => 'items#create'
   # Example resource route with more complex sub-resources:
   #   resources :products do
   #     resources :comments
